@@ -1,0 +1,77 @@
+html, body, h1, h2, h3, h4, h5 p{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+body {
+    background-color: #ffffff;  
+    color: #000000;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header {
+    display: flex;
+    padding: 1em;
+    background-color: #f6b948;
+    justify-content: space-between;
+    width: 100%;
+    color: #000000;  
+}
+nav {
+    display: flex;
+    color: #000000;
+    text-decoration: none;
+    justify-content: space-between;
+    padding: 15px 75px 15px 0;
+}
+nav a {
+    text-decoration: none;
+    padding: 30px 30px;
+    text-align: center;
+    font-size: 1em ;
+    color: #000000;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#mainImage {
+    /* background-image: url("images/hero-image.jpg"); */
+    width: 100%;
+    height: 580px;
+    overflow: hidden;
+}
+#mainImage img{
+    width: 100%;
+    position: relative;
+}
+#mainImageTag {
+    position: absolute;
+    max-width: fit-content;
+    background-color: #ffffff;
+    top: 580px;
+    left: 35%;
+    z-index: 9999;
+    padding: 10px;
+    font-size: 2em;
+    font-weight: bolder;
+}
+#everyday {
+    padding: 50px;
+}
+#everyday img {
+    width: 300px;
+}
+/* img .imgEC {
+    width: 50px;
+} */
+#HROW {
+    background-color: #7c7c7c;
+}
+#whereEat {
+
+}
+footer {
+    display: flex;
+    padding: 1em;
+    background-color: #f6b948;
+    justify-content: space-between;
+    width: 100%;
+    color: #000000; 
+}
