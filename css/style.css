@@ -58,22 +58,39 @@ nav a {
     display: flex;
     justify-content: center;
 }
+.subImageContainer {
+    max-width: 100%;
+}
 .subImage {
     flex-direction: column;
+    padding: 0 40px 0 0;
 }
 .content img{
     max-width: 100%;
+    /* margin: 0px 40px 0 0; */
+}
+.subImage:nth-last-child(1){
+    padding: 0;
+
 }
 .subImage:nth-of-type(-n+2){
-    margin: 0px 40px 0 0;
+    /* margin: 0px 40px 0 0; */
+    /* margin: 0; */
 }
 .imgTag {
     display: flex;
     justify-content: center;
     max-width: 100%;
+    background-color: #ffffff;
+    padding: 10px 0;
+    margin: 0;
+}
+.imgTag:nth-last-child(1) {
+    
+    /* margin: 0px 40px 0 0; */
 }
 #HROW {
-    background-color: #7c7c7c;
+    background-color: #c1c1c1;
 }
 #whereEat {
 
