@@ -10,14 +10,21 @@ body {
 }
 header {
     display: flex;
+    /* flex-direction: row-reverse; */
     padding: 0 2em;
     background-color: #f6b948;
     justify-content: space-between;
     width: 100%;
     color: #000000;  
+    /* flex-direction: row; */
+}
+nav img {
+    /* display: flex; */
+    /* flex-grow: 2; */
 }
 nav {
     display: flex;
+    align-items: center;
     color: #000000;
     text-decoration: none;
     justify-content: space-between;
@@ -25,6 +32,7 @@ nav {
 }
 nav a {
     text-decoration: none;
+    flex-grow: 1;
     padding: 30px 30px;
     text-align: center;
     font-size: 1em ;
@@ -51,49 +59,60 @@ nav a {
     font-size: 2em;
     font-weight: bolder;
 }
+#recpQuickInfoContainer {
+    background-color: #c1c1c1;
+    padding: 20px 70px;
+}
+#recpQuickInfo {
+    width: 50%;
+    display: flex;
+    flex-grow: 2;
+}
+#recpQuickInfo span {
+    /* padding: 10px; */
+}
+.bold {
+    font-weight: bold;
+    /* padding: 1em, 0em; */
+}
 .content {
     padding: 70px;
 }
 .content div {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 .subImageContainer {
     max-width: 100%;
+    gap: 30px;
 }
 .subImage {
     flex-direction: column;
-    padding: 0 40px 0 0;
+    width: 30%;
+    flex-grow: 1;
 }
 .content img{
     max-width: 100%;
-    /* margin: 0px 40px 0 0; */
 }
 .subImage:nth-last-child(1){
     padding: 0;
 
 }
-.subImage:nth-of-type(-n+2){
-    /* margin: 0px 40px 0 0; */
-    /* margin: 0; */
-}
 .imgTag {
     display: flex;
     justify-content: center;
-    max-width: 100%;
+    /* max-width: 100%; */
+    /* flex-grow: 1; */
     background-color: #ffffff;
     padding: 10px 0;
     margin: 0;
 }
-.imgTag:nth-last-child(1) {
-    
-    /* margin: 0px 40px 0 0; */
-}
 #HROW {
     background-color: #c1c1c1;
 }
-#whereEat {
-
+#whereEat img{
+    padding: 5px;
+    background-color: #c1c1c1;
 }
 footer {
     display: flex;
@@ -102,4 +121,8 @@ footer {
     justify-content: space-between;
     width: 100%;
     color: #000000; 
+    align-items: center;
+}
+footer :first-child {
+    padding-left: 2em;
 }
